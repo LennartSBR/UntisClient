@@ -1,0 +1,38 @@
+{
+  "name": "untisclient",
+  "productName": "UntisClient",
+  "version": "1.1.0",
+  "description": "Der Stundenplan direkt auf ihren Rechner",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.lslabs.untisclient",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/icon.ico"
+    }
+  },
+  "nsis": {
+    "oneClick": true,
+    "installerIcon": "src/icon.ico",
+    "uninstallerIcon": "src/icon.ico",
+    "uninstallDisplayName": "Uninstalling - Untis Client",
+    "allowToChangeInstallationDirectory": false
+  },
+
+
+  "keywords": [],
+  "author": {
+    "name": "LsLabs",
+    "email": "lennart.schmehr@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.1.2",
+    "electron-builder": "^24.9.1"
+  }
+}
