@@ -1,2 +1,2 @@
 # UntisClient
- The timetable in your PC
+ Der Stundenplan in deinem PC
